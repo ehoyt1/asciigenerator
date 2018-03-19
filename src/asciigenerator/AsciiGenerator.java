@@ -8,11 +8,7 @@
  * 
  * NEED TO DO!
  * 
- *   - Split word into separate characters
  *   - Use switch statement to assign character to specific ASCII representation
- * 
- * 
- * 
  * 
  */
 
@@ -35,9 +31,25 @@ public class AsciiGenerator {
         System.out.print("Please enter a word to convert: ");
         String wordInput = scnr.next();
         
-        
-        
-        
+        // Split letters out
+        for (int i = 0;i < wordInput.length(); i++){
+            //System.out.print(wordInput.charAt(i) + " ");
+            
+            switch (wordInput.charAt(i)) {
+            case 'A':
+                System.out.println("     //\\        ");
+                System.out.println("    // \\\\      ");
+                System.out.println("   //   \\\\     ");
+                System.out.println("  //======\\    ");
+                System.out.println(" //       \\\\   ");
+                System.out.println("//         \\\\  ");
+                
+                break;
+                     
+            }
+            
+        }
+        System.out.println("");
         // Output user input
         System.out.println(wordInput);
     }
